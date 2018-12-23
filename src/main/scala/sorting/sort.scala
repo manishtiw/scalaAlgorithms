@@ -1,7 +1,7 @@
 package sorting
-/** different sorting app
-  * Translate the java algorithm to scala algorithms
-  * Below are three sorting algorithm
+/** The implementation tries to give more functional approach towards 
+  * common sorting algorithms
+  * Three sorting algorithm are implemented below.
   * merge sort,bubble sort, selection sort
   */
 
