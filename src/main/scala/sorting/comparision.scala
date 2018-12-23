@@ -30,19 +30,19 @@ def msortmeasure(n:Int)= {
   val msorttime = measure {
     msortmeasure(1000)
   }
-  println(s"Array merge sort time : $msorttime ms")
+  println(s"Merge sort time : $msorttime ms")
 
   val bsorttime = measure {
     bsortmeasure(10)
 
   }
-  println(s"Array bubble sort time : $bsorttime ms")
+  println(s"Bubble sort time : $bsorttime ms")
 
 
   val ssortm = measure {
     ssortmeasure(10)
   }
 
-  println(s"Array selection sort time : $ssortm ms")
+  println(s"Selection sort time : $ssortm ms")
 
 }
