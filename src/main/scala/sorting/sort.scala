@@ -1,7 +1,7 @@
 package sorting
 /** The implementation tries to give more functional approach towards 
   * common sorting algorithms
-  * Three common sorting algorithm are implemented below.
+  * Three sorting algorithm are implemented below.
   * merge sort,bubble sort, selection sort
   */
 
