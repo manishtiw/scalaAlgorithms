@@ -2,7 +2,6 @@ package sorting
 
 
 import org.scalameter.measure
-
 import scala.util.Random
 import sort._
 
