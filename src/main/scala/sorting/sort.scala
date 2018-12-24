@@ -51,6 +51,20 @@ object sort {
     xs
   }
 
-
-
+  def shsort[T](xs:Array[T]) (implicit ord: Ordering[T]): Array[T] =  {
+    var len=xs.length/2
+    while(len>=1) {
+      for(j <- len until xs.length) {
+        var i=j-len
+        val tmp=xs(j)
+        while(i>=0 && ord.gt(xs(i),tmp)) {
+          xs(i+len) = xs(i)
+          i -= len
+        }
+        xs(i+len) = tmp
+      }
+      len=(len/2.2).round.toInt
+    }
+    xs
+  }
 }
