@@ -1,8 +1,11 @@
 package sorting
-/** The implementation tries to give more functional approach towards 
-  * common sorting algorithms
+/**  
+  * Implementing common sorting algorithms
   * Three sorting algorithm are implemented below.
-  * merge sort,bubble sort, selection sort
+  * merge sort
+  * bubble sort 
+  * selection sort
+  * shell sort
   */
 
 object sort {
@@ -10,7 +13,7 @@ object sort {
   def mergesort[T](xs: List[T])(implicit ord: Ordering[T]): List[T] = {
     val n = xs.length / 2
     if (n == 0) xs
-    else {
+    else {The
       def merge(xs: List[T], ys: List[T]): List[T] = (xs, ys) match {
         case (Nil, ys) => ys
         case (xs, Nil) => xs
